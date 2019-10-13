@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1511357189 source:c:\users\pranjal\desktop\projects\codeblocksc++\sortings\main.c
+	<stdio.h>
+	<stdlib.h>
+
