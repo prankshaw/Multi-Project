@@ -1,0 +1,15 @@
+{% extends "layout.html" %} {% block main %}
+
+<!--
+  View for errors
+-->
+
+<div class="alert alert-danger" role="alert">
+  <h4 class="alert-heading">Error</h4>
+  <hr />
+  {% for f in failure %}
+  <p>{{ f }}</p>
+  {% endfor %}
+</div>
+
+{% endblock %}

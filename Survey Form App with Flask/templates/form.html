@@ -1,0 +1,83 @@
+{% extends "layout.html" %} {% block main %}
+
+<!--
+  View for /form route
+-->
+
+<h1 class="mb-4 text-center display-4">Survey Form</h1>
+
+<form action="/form" method="post" class="container needs-validation form" novalidate>
+  <div class="form-group">
+    <input autocomplete="off" autofocus class="form-control" name="name" placeholder="Name" type="text" required />
+    <div class="invalid-feedback">
+      Please enter your name
+    </div>
+  </div>
+
+  <div class="form-group">
+    <input autocomplete="off" class="form-control" name="email" placeholder="Email" type="email" required />
+    <div class="invalid-feedback">
+      Please enter your email
+    </div>
+  </div>
+
+  <div class="form-group">
+    <input autocomplete="off" class="form-control" name="phone" placeholder="Phone Number" type="text" required />
+    <div class="invalid-feedback">
+      Please enter your phone number
+    </div>
+  </div>
+
+  <div class="form-group">
+    <select class="form-control" name="choice" id="choice" required>
+      <option disabled selected value="">Food Preference</option>
+      <option value="Veg">Vegetarian</option>
+      <option value="Non-Veg">Non-Vegetarian</option>
+    </select>
+    <div class="invalid-feedback">
+      Please enter a preference for food
+    </div>
+  </div>
+
+  <div class="text-center">
+    <div class="custom-control-inline">
+      <label>
+        Gender
+      </label>
+    </div>
+
+    <div class="custom-control custom-radio custom-control-inline mb-3">
+      <input class="custom-control-input" id="genderM" name="gender" type="radio" value="Male" required />
+      <label class="custom-control-label" for="genderM">
+        Male
+      </label>
+    </div>
+
+    <div class="custom-control custom-radio custom-control-inline mb-3">
+      <input class="custom-control-input" id="genderF" name="gender" type="radio" value="Female" required />
+      <label class="custom-control-label" for="genderF">
+        Female
+      </label>
+    </div>
+
+    <div class="custom-control custom-radio custom-control-inline mb-3">
+      <input class="custom-control-input" id="genderN" name="gender" type="radio" value="Neutral" required />
+      <label class="custom-control-label" for="genderN">
+        Neutral
+      </label>
+    </div>
+  </div>
+
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input slider" id="switch" required />
+    <label class="custom-control-label" for="switch">
+      I agree that the information given above is correct.
+    </label>
+  </div>
+
+  <button class="btn btn-primary btn-block mt-3" type="submit">Submit</button>
+</form>
+
+<script src="/static/form.js"></script>
+
+{% endblock %}
