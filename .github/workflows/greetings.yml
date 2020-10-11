@@ -9,5 +9,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Message that will be displayed on users'' first issue'
-        pr-message: 'Message that will be displayed on users'' first pr'
+        issue-message: 'Welcome, please submit your issues using the given format and proper explanation :)'' first issue'
+        pr-message: 'Welcome, to the PR section. Submit something good and it will be merged. Do ad screenshots and about.md file :) :)'' first pr'
