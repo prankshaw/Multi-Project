@@ -1,0 +1,29 @@
+img {
+  padding: 10px;
+  height: 250px;
+  width: 250px;
+
+}
+
+body {
+  background-color: black;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.get {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+input{
+  margin: 10px;
+}
